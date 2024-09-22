@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin: 20px 0;
+}
+
+.search-bar {
+  width: calc(100% - 120px);
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  background-color: #E6E6FA;
+  border: 2px solid #800080;
+  border-radius: 5px;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: calc(100% - 30px);
+  border: none;
+  background: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.search-bar .search-icon {
+  color: #800080;
+}
+
+.filter-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.filter-dropdown {
+  background-color: #800080;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filter-icon {
+  color: #800080;
+  margin-left: 5px;
+}
+
+.tasks-list {
+  clear: both;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #800080;
+  border-radius: 3px;
+}
+
+.task-checkbox:checked {
+  background-color: #800080;
+}
+
+.add-task-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #800080;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+}
